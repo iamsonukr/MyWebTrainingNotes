@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .parent{
+            height: 100vh;
+            background-color: red;
+            display: flex;
+            justify-content: center ;
+            align-items: center;
+        }
+        
+        .childOne{
+            background-color: yellow;
+            height: 300px;
+            width: 300px;
+        }
+        .childOne:hover{
+            /* transform: rotate(50deg); */
+            transition: 2s ;
+            transform: translateY(90px);
+            box-shadow: 10px 10px 10px black;
+        }
+        .childTwo{
+            background-color: green;
+            height: 300px;
+            width: 300px;
+        }
+        .childTwo:hover{
+            transition: 2s ;
+            transform: translateX(90px);
+            box-shadow: 10px 10px 10px black;
+        }
+        nav{
+            display: flex;
+            background-image: url('https://images.unsplash.com/photo-1712677542808-51a7a0abd954?q=80&w=1818&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center center;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 100px;
+            height: 70px;
+        }
+        .menu{
+            margin: 0;
+            padding: 0  ;
+        }
+        /* github/iamsonukr */
+        .menu ul{
+            display: flex;
+            /* justify-content: flex-end; */
+            align-items:end;
+            gap: 10px;
+            list-style-type: none;
+            font-size: large;
+            color: rgb(255, 255, 255);
+            font-weight: 800;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .menu ul li:hover{
+            background-color: rgb(0, 0, 0);
+            cursor: pointer;
+        }
+        .menu ul li{
+            padding: 25px 10px;
+            text-shadow: 1px 1px 1px black;
+        }
+    </style>
+    <!-- github/iamsonukr -->
+</head>
+<body>
+    <!-- navbar -->
+     <nav>
+        <div class="logo">
+            <img src="https://www.nasa.gov/wp-content/themes/nasa/assets/images/nasa-logo.svg" alt="" width="90%">
+        </div>
+        <div class="menu">
+            <ul>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+                <li>Home</li>
+            </ul>
+
+        </div>
+        
+     </nav>
+    <!-- flexbox -->
+     <div class="parent">
+        <div class="childOne">
+            
+        </div>
+        <div class="childTwo">
+
+        </div>
+     </div>
+     
+</body>
+</html>
